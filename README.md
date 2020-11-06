@@ -1,17 +1,7 @@
 # Narou.rb Docker Image
 
-Narou.rb を Docker で実行するための Docker Image です。<br>
+Narou.rb を Raspbeery Pi 上の Docker で実行するための Docker Image です。<br>
 Docker さえあれば一切環境構築なしで Narou.rb WEB UI を立ち上げることができます。
-
-Narou.rb 作者製です。<br>
-最新バージョンへの追随は本体とほぼ同時に行う予定です。
-
-イメージ内容は下記で構成されます。
-
-- Alpine Linux
-- Ruby 2.7
-- [改造版AozoraEpub3](https://github.com/kyukyunyorituryo/AozoraEpub3)
-- kindlegen 2.9
 
 # 使い方（docker コマンド編)
 
@@ -116,3 +106,11 @@ $ dip up
 $ eval "$(dip console)"
 $ narou list
 ```
+
+## See Also
+- [whiteleaf7/narou-docker: Narou.rb Dockerfile](https://github.com/whiteleaf7/narou-docker)
+- [Raspberry Piでプログラムを自動起動する5種類の方法を比較・解説 - Qiita](https://qiita.com/karaage0703/items/ed18f318a1775b28eab4)
+- [Narou.rbのdocker更新した - ぐにょ.org](https://blog.gnyo.org/2018/12/27/narou-rbのdocker更新した/)
+- [Raspberry Pi + Narou.rbで小説家になろう定期ダウンローダーを作る](https://boxes-stacked.blogspot.com/2016/04/raspberry-pi-narourb.html)
+- [Raspberry Pi + Narou.rbで小説家になろう定期ダウンローダーを作る](https://boxes-stacked.blogspot.com/2016/04/raspberry-pi-narourb.html)
+- [collelog/narourb-docker-rpi](https://github.com/collelog/narourb-docker-rpi)

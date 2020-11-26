@@ -18,6 +18,7 @@ if [ ! -e /novel/.narou ]; then
 
   narou s convert.no-open=true
   narou s device=kindle
+  narou s convert.no-strip=true
 fi
 
 exec "$@"

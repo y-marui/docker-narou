@@ -1,4 +1,5 @@
 #!/bin/sh
+/etc/init.d/cron start
 
 if [ ! -e /novel/.narou ]; then
   mkdir .narou

@@ -50,7 +50,7 @@ RUN chmod 777 /aozoraepub3/kindlegen \
 
 EXPOSE 33000-33001
 
-RUN echo "0 1 * * * cd /novel; narou u" >> /var/spool/cron/crontabs/root
+RUN echo "0 1 * * * curl -X POST -d '' localhost:33000/api/update" >> /var/spool/cron/crontabs/root
 
 ENTRYPOINT ["init.sh"]
-CMD ["/etc/init.d/cron", "start", ";", "narou", "web", "-np", "33000"]
+CMD ["narou", "web", "-np", "33000"]
